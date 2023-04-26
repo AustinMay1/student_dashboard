@@ -9,6 +9,94 @@
     <title>Dashboard</title>
 </head>
 <body>
+    <div class="sidebar">
+        <span id="logo">Veritas University</span>
+        <nav>
+            <div class="with-icon">
+            <img src="./assets/house-solid.svg" width="20px" height="20px" />
+            <span href="#">Dashboard</span>
+            </div>
+
+            <div class="with-icon">
+                <img src="./assets/user-solid-white.svg" width="20px" height="20px" />
+                <span href="#">Profile</span>
+            </div>
+
+            <div class="with-icon">
+                <img src="./assets/credit-card-regular.svg" width="20px" height="20px" />
+                <span href="#">Create Payment</span>
+            </div>
+
+            <div class="with-icon">
+                <img src="./assets/receipt-solid.svg" width="20px" height="20px" />
+                <span href="#">View Payment History</span>
+            </div>
+
+            <div class="with-icon">
+                <img src="./assets/headset-solid.svg" width="20px" height="20px" />
+                <span href="#">Support</span>
+            </div>
+        </nav>
+    </div>
+
+    <h1 id="greeting">Hello, <span>Student</span></h1>
+
+    <main>
     
+        <div class="notifications">
+            <div class="noti-header">
+            <h3>Notifications</h3>
+            <img src="./assets/bell-solid.svg" width="20px" height="20px" />
+            </div>
+            <span>Scheduled Maintenance: 05/01/2023 @ 3PM</span>
+        </div>
+        <div class="balance-due">
+            <h2>Dorm Room: #256</h2>
+            <h3>Total Paid: $1,256.90/$4,320.75</h3>
+            <h4>Next Payment Due: May 15th, 2023</h4>
+            <div class="payment">
+            <button>
+                <span>Make Payment</span>
+            <img src="./assets/arrow-right-solid.svg" width="20px" height="20px" />
+            </button>
+            </div>
+        </div>
+
+        <div class="payment-history">
+            <h2>Payment History</h2>
+            <button>
+                <span>View All</span>
+                <img src="./assets/arrow-up-right-from-square-solid.svg" width="20px" height="20px" />
+            </button>
+            <table>
+                <tbody>
+                <tr>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Total Balance</th>
+                    <th>Payment Method</th>
+                </tr>
+                <tr>
+                    <td>$418.96</td>
+                    <td>02/15/23</td>
+                    <td>$418.96</td>
+                    <td>Credit Card</td>
+                </tr>
+                <tr>
+                    <td>$418.96</td>
+                    <td>03/15/23</td>
+                    <td>$837.92</td>
+                    <td>Credit Card</td>
+                </tr>
+                <tr>
+                    <td>$418.96</td>
+                    <td>04/15/23</td>
+                    <td>$1,256.90</td>
+                    <td>Cash</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
 </body>
 </html>

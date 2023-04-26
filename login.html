@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="./styles/login.styles.css" />
     <title>Login</title>
   </head>
+
   <body>
     <nav>
+        <div>
+            <span id="logo">Veritas University</span>
+        </div>
       <div>
-        <h2 id="logo">Some University</h2>
+        <ul>
+            <li>Home</li>
+            <li>Admissions</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
       </div>
     </nav>
 
@@ -19,21 +28,26 @@
       <div class="login-modal">
         <div class="login-form">
           <h3 id="form-header">Payment Portal Login</h3>
-          <form>
+          <form action="/dashboard.html" method="POST">
             <div class="form-input">
-              <label for="studentid">Student I.D.</label>
               <br />
-              <input type="text" name="studentid" id="studentid" required />
+              <div class="with-icon-before">
+              <img src="./assets/user-solid.svg" width="15px" height="15px" />
+              <input type="text" name="studentid" id="studentid" required placeholder="student id" />
+              </div>
             </div>
             <div class="form-input">
-              <label for="studentxword">Password</label>
               <br />
+              <div class="with-icon-before">
+              <img src="./assets/lock-solid.svg" width="15px" height="15px" />
               <input
                 type="password"
                 name="studentxword"
                 id="studentxword"
                 required
+                placeholder="password"
               />
+              </div>
             </div>
             <div class="form-submit">
               <input type="submit" value="Login" />
@@ -47,14 +61,13 @@
     </main>
 
     <footer>
-      <div>
-        <h2 id="logo">Some University</h2>
+        <img src="./assets/veritas-logo.svg" width="200px" height="200px" />
         <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
         </ul>
-      </div>
     </footer>
+
   </body>
 </html>
