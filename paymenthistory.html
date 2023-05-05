@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/base.styles.css" />
+    <link rel="stylesheet" href="./styles/paymenthistory.styles.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <span id="logo">Veritas University</span>
+      <nav>
+        <div class="with-icon">
+          <img src="./assets/house-solid.svg" width="20px" height="20px" />
+          <span><a href="dashboard.html">Dashboard</a></span>
+        </div>
+
+        <div class="with-icon">
+          <img src="./assets/user-solid-white.svg" width="20px" height="20px" />
+          <span><a href="underconstruction.html">Profile</a></span>
+        </div>
+
+        <div class="with-icon">
+          <img
+            src="./assets/credit-card-regular.svg"
+            width="20px"
+            height="20px"
+          />
+          <span><a href="payment.html">Create Payment</a></span>
+        </div>
+
+        <div class="with-icon">
+          <img src="./assets/receipt-solid.svg" width="20px" height="20px" />
+          <span><a href="paymenthistory.html">View Payment History</a></span>
+        </div>
+
+        <div class="with-icon">
+          <img src="./assets/headset-solid.svg" width="20px" height="20px" />
+          <span><a href="underconstruction.html">Support</a></span>
+        </div>
+
+        <div class="with-icon">
+                <img src="./assets/arrow-left-solid.svg" width="20px" height="20px" />
+                <span><a href="/login.html">Log Out</a></span>
+            </div>
+      </nav>
+    </div>
+    <main>
+      <div class="payment-history">
+        <h2>Payment History</h2>
+        <h3>Current Semester</h3>
+        <table>
+          <tbody>
+            <tr>
+              <th>Total Balance</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Payment Method</th>
+            </tr>
+            <tr>
+              <td>$1,256.90</td>
+              <td>02/15/23</td>
+              <td>$418.96</td>
+              <td>Credit Card</td>
+            </tr>
+            <tr>
+              <td>$837.92</td>
+              <td>03/15/23</td>
+              <td>$418.96</td>
+              <td>Credit Card</td>
+            </tr>
+            <tr>
+              <td>$418.96</td>
+              <td>04/15/23</td>
+              <td>$418.96</td>
+              <td>Cash</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 style="margin-top: 15px">Previous Semester</h3>
+        <table>
+          <tbody>
+            <tr>
+              <th>Total Balance</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Payment Method</th>
+            </tr>
+            <tr>
+              <td>$1,256.90</td>
+              <td>02/15/23</td>
+              <td>$418.96</td>
+              <td>Credit Card</td>
+            </tr>
+            <tr>
+              <td>$837.92</td>
+              <td>03/15/23</td>
+              <td>$418.96</td>
+              <td>Check</td>
+            </tr>
+            <tr>
+              <td>$418.96</td>
+              <td>04/15/23</td>
+              <td>$418.96</td>
+              <td>Credit Card</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

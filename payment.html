@@ -14,12 +14,12 @@
       <nav>
         <div class="with-icon">
           <img src="./assets/house-solid.svg" width="20px" height="20px" />
-          <span href="#">Dashboard</span>
+          <span><a href="dashboard.html">Dashboard</a></span>
         </div>
 
         <div class="with-icon">
           <img src="./assets/user-solid-white.svg" width="20px" height="20px" />
-          <span href="#">Profile</span>
+          <span><a href="underconstruction.html">Profile</a></span>
         </div>
 
         <div class="with-icon">
@@ -28,24 +28,29 @@
             width="20px"
             height="20px"
           />
-          <span href="#">Create Payment</span>
+          <span><a href="payment.html">Create Payment</a></span>
         </div>
 
         <div class="with-icon">
           <img src="./assets/receipt-solid.svg" width="20px" height="20px" />
-          <span href="#">View Payment History</span>
+          <span><a href="paymenthistory.html">View Payment History</a></span>
         </div>
 
         <div class="with-icon">
           <img src="./assets/headset-solid.svg" width="20px" height="20px" />
-          <span href="#">Support</span>
+          <span><a href="underconstruction.html">Support</a></span>
         </div>
+
+        <div class="with-icon">
+                <img src="./assets/arrow-left-solid.svg" width="20px" height="20px" />
+                <span><a href="/login.html">Log Out</a></span>
+            </div>
       </nav>
     </div>
 
     <main>
       <div class="payment-form">
-        <form id="payment-details">
+        <form id="payment-details" action="/thankyou.html">
           <div class="with-icon-before">
             <img
               src="./assets/id-badge-regular.svg"
@@ -160,11 +165,23 @@
             <input type="submit" name="submit_payment" value="Submit Payment" />
           </div>
           <div class="total">
-          <span>Total Due: $1,216.70</span>
-        </div>
+            <span>Total Due: <span id="amount-due">$418.96</span></span>
+          </div>
         </form>
-        
       </div>
     </main>
+
+    <script>
+      const amountDue = document.getElementById("amount-due");
+      let selection = document.getElementById("payment-frequency");
+
+      console.log(selection.options[selection.selectedIndex].text);
+
+      selection.addEventListener("change", () => {
+        return selection.options[selection.selectedIndex].text == "Monthly"
+          ? (amountDue.innerHTML = "$418.96")
+          : (amountDue.innerHTML = "$4,320.75");
+      });
+    </script>
   </body>
 </html>

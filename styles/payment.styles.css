@@ -148,3 +148,7 @@ form {
     font-size: 24px;
     font-weight: 600;
 }
+a {
+  color: white;
+  text-decoration: none
+}
